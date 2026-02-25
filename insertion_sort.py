@@ -1,10 +1,20 @@
 # INSERTION SORT ALGORTIHM
-# Written by: <name here>
+# Written by: Andrew Sameh Adel Mikhail
 # Author Details: 
-#       ID: <your id here>
+#       ID: 9489
 #       Group: 3
 #       Section: 1
 #
 
 def insertion_sort(array: list) -> list:
-    return []
+    for i in range(1, len(array)):
+        key = array[i]
+        j = i - 1
+        
+        while j >= 0 and key < array[j]:
+            array[j + 1] = array[j]
+            j -= 1
+        
+        array[j + 1] = key
+    
+    return array
