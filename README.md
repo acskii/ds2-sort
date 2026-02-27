@@ -8,12 +8,19 @@ Here is the [document](https://docs.google.com/document/d/1swRiyFBWtCAOdHuiIguP1
 
 - Andrew Sameh Adel Mikhail, ID **9489**
 
-- Ahmed Abd Al Moneim, ID **<ID>**
+- Ahmed Abd Al Moneim, ID **9284**
 
-- Galal Mohamed, ID **<ID>**
+- Galal Mohamed, ID **9453**
+
+### Results
+
+![Graph of running times](./results.png)
+
+#### Using Logarithmic y axis 
+
+![Graph of running times](./results_log.png)
 
 ### Current Project Structure
-_(may change)_
 
 ```text
 │   
@@ -26,6 +33,8 @@ _(may change)_
 └─── insertion_sort.py
 │   
 └─── selection_sort.py
+│   
+└─── timer.py
 │   
 └─── main.py
 ```
