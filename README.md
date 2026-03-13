@@ -16,7 +16,7 @@ Here is the [document](https://docs.google.com/document/u/0/d/1Q03FY9RClO7_HGWfV
 
 ### Results
 
-[new results will be added]
+![Graph](./Picture1.png)
 
 ### Current Project Structure
 
