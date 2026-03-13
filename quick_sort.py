@@ -13,7 +13,10 @@ import random
 # You can use random.randint(l, h) or random.choice(array) to pick the pivot
 def partition(array, l, h):
     i, j = l - 1, h + 1
-    pivot = array[random.randint(l, h)]
+    p = random.randrange(l, h)
+    
+    array[l], array[p] = array[p], array[l]
+    pivot = array[l]
     
     while True:
         while True:
@@ -24,13 +27,10 @@ def partition(array, l, h):
             j -= 1
             if (array[j] <= pivot): break
             
-        if (i >= j): break
+        if (i >= j): return j
         
         array[i], array[j] = array[j], array[i]
         
-    array[j], array[l] = array[l], array[j]
-    return j
-    
 def req(array, l, h):
     if (l < h):
         j = partition(array, l, h)
