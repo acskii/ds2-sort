@@ -6,6 +6,7 @@
 #       Section: 1
 #
 
+
 def merge_sort(arr):
     #base-case check##
     if len(arr)>1:
