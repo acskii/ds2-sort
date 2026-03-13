@@ -35,11 +35,11 @@ def partition(array, l, h):
     return i + 1
 
 
-def k_smallest(array):
+def k_smallest(array, k):
     l = 0
     h = len(array) - 1
-    # we get k from the user and subtract 1 from it to make it 0-indexed
-    k = int(input("Enter the value of k: ")) - 1
+    k = k - 1
+    
     #keep partitioning until we find the pivot at index k (0-indexed)
     while True:
         pivot = partition(array, l, h)
@@ -50,6 +50,3 @@ def k_smallest(array):
             l = pivot + 1
         else:
             h = pivot - 1
-
-
-print(k_smallest([3, 41, 16, 25, 63, 52, 40]))
