@@ -25,14 +25,16 @@
 #       Group: 3
 #       Section: 1
 
-from bubble_sort import bubble_sort
-from selection_sort import selection_sort
-from insertion_sort import insertion_sort
+from hybrid_sort import hybrid_sort
 from timer import record_running_times
+from quick_sort import quick_sort
+from k_smallest import k_smallest
+from merge_sort import merge_sort
+from heap_sort import max_heap_sort
 
 def main():
     sizes = [5000, 10000, 20000, 50000, 75000, 100000]
-    sorts = [bubble_sort, selection_sort, insertion_sort]
+    sorts = [quick_sort, merge_sort, max_heap_sort]
     record_running_times(sorts, sizes)
 
 if (__name__ == "__main__"):
