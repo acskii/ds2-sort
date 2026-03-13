@@ -29,7 +29,7 @@ def record_running_times(sort_functions: list, sizes: list) -> None:
             start_time = time.time()
                         
             # Sort the array
-            sort_function(data)
+            sort_function(data.copy())
                         
             # Record end time and calculate duration
             end_time = time.time()
